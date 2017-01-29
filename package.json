@@ -1,0 +1,17 @@
+{
+  "name": "code_checker",
+  "version": "1.0.0",
+  "description": "Basic ES5 configuration for watching src directory and check files for eslint errors.",
+  "scripts": {
+    "start": "npm run watch",
+    "check": "sh ./scripts/eslint_check.sh",
+    "fix": "sh ./scripts/eslint_fix.sh",
+    "watch": "./node_modules/.bin/nodemon --exec \"npm run check\" src"
+  },
+  "author": "Viacheslav Karnaukh",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^3.14.1",
+    "nodemon": "^1.11.0"
+  }
+}
